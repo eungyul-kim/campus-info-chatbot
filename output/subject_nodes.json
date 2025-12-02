@@ -1,0 +1,1441 @@
+{
+  "nodes": [
+    {
+      "id": "AMTH1001",
+      "type": "Subject",
+      "name": "미분방정식",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "AMTH1004",
+      "type": "Subject",
+      "name": "선형대수",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "AMTH1009",
+      "type": "Subject",
+      "name": "미분적분학",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "EE211",
+      "type": "Subject",
+      "name": "확률및랜덤변수",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE103",
+      "type": "Subject",
+      "name": "객체지향프로그래밍",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE203",
+      "type": "Subject",
+      "name": "컴퓨터구조",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE204",
+      "type": "Subject",
+      "name": "자료구조",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE301",
+      "type": "Subject",
+      "name": "운영체제",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE302",
+      "type": "Subject",
+      "name": "컴퓨터네트워크",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE304",
+      "type": "Subject",
+      "name": "알고리즘",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": [
+        "알고리즘분석"
+      ]
+    },
+    {
+      "id": "CSE305",
+      "type": "Subject",
+      "name": "데이터베이스",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE327",
+      "type": "Subject",
+      "name": "소프트웨어공학",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE403",
+      "type": "Subject",
+      "name": "졸업논문",
+      "credits": 0,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE405",
+      "type": "Subject",
+      "name": "졸업프로젝트",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": [
+        "캡스톤디자인 2"
+      ]
+    },
+    {
+      "id": "CSE406",
+      "type": "Subject",
+      "name": "캡스톤디자인",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": [
+        "캡스톤디자인 1"
+      ]
+    },
+    {
+      "id": "EE209",
+      "type": "Subject",
+      "name": "논리회로",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON104",
+      "type": "Subject",
+      "name": "웹/파이선프로그래밍",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON201",
+      "type": "Subject",
+      "name": "오픈소스SW개발방법및도구",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": [
+        "소프트웨어개발방법및 도구"
+      ]
+    },
+    {
+      "id": "SWCON253",
+      "type": "Subject",
+      "name": "기계학습",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "AI1002",
+      "type": "Subject",
+      "name": "인공지능프로그래밍",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "AI3001",
+      "type": "Subject",
+      "name": "고급딥러닝",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "AI3004",
+      "type": "Subject",
+      "name": "빅데이터마이닝",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": [
+        "데이터마이닝"
+      ]
+    },
+    {
+      "id": "CSE104",
+      "type": "Subject",
+      "name": "실감미디어컴퓨팅기초",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE201",
+      "type": "Subject",
+      "name": "이산구조",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE224",
+      "type": "Subject",
+      "name": "UI/UX프로그래밍",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE322",
+      "type": "Subject",
+      "name": "컴파일러",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": [
+        "형식언어및컴파일러"
+      ]
+    },
+    {
+      "id": "CSE324",
+      "type": "Subject",
+      "name": "메타버스시스템",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": [
+        "멀티미디어시스템"
+      ]
+    },
+    {
+      "id": "CSE328",
+      "type": "Subject",
+      "name": "프로그래밍언어론",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": [
+        "프로그래밍언어구조론"
+      ]
+    },
+    {
+      "id": "CSE330",
+      "type": "Subject",
+      "name": "SW스타트업비즈니스",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": [
+        "SW스타트업비지니스"
+      ]
+    },
+    {
+      "id": "CSE331",
+      "type": "Subject",
+      "name": "딥러닝",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": [
+        "머신러닝"
+      ]
+    },
+    {
+      "id": "CSE332",
+      "type": "Subject",
+      "name": "리눅스시스템프로그래밍",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE334",
+      "type": "Subject",
+      "name": "SW스타트업프로젝트",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE335",
+      "type": "Subject",
+      "name": "클라우드컴퓨팅",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE340",
+      "type": "Subject",
+      "name": "실전기계학습",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE4100",
+      "type": "Subject",
+      "name": "블록체인프로젝트",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE423",
+      "type": "Subject",
+      "name": "정보보호",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE426",
+      "type": "Subject",
+      "name": "영상처리",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE428",
+      "type": "Subject",
+      "name": "컴퓨터그래픽스",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE430",
+      "type": "Subject",
+      "name": "메타버스테이터처리",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": [
+        "멀티미디어처리"
+      ]
+    },
+    {
+      "id": "CSE431",
+      "type": "Subject",
+      "name": "인간-컴퓨터상호작용",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE434",
+      "type": "Subject",
+      "name": "빅데이터프로그래밍",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE436",
+      "type": "Subject",
+      "name": "빅데이터프로젝트",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": [
+        "최신기술프로젝트 1"
+      ]
+    },
+    {
+      "id": "CSE437",
+      "type": "Subject",
+      "name": "클라우드프로젝트",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": [
+        "최신기술프로젝트 2"
+      ]
+    },
+    {
+      "id": "CSE438",
+      "type": "Subject",
+      "name": "최신기술콜로키움1",
+      "credits": 2,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE439",
+      "type": "Subject",
+      "name": "AIoT디지털시스템",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": [
+        "IoT디지털시스템"
+      ]
+    },
+    {
+      "id": "CSE440",
+      "type": "Subject",
+      "name": "AIoT소프트웨어",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": [
+        "IoT소프트웨어"
+      ]
+    },
+    {
+      "id": "CSE441",
+      "type": "Subject",
+      "name": "컴퓨터비젼",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": [
+        "컴퓨터비전"
+      ]
+    },
+    {
+      "id": "CSE442",
+      "type": "Subject",
+      "name": "블록체인",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE443",
+      "type": "Subject",
+      "name": "AI네트워킹",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE444",
+      "type": "Subject",
+      "name": "AIoT네트워크",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": [
+        "IoT네트워크"
+      ]
+    },
+    {
+      "id": "CSE450",
+      "type": "Subject",
+      "name": "모바일/웹서비스프로그래밍",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE451",
+      "type": "Subject",
+      "name": "모바일/웹서비스프로젝트",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE452",
+      "type": "Subject",
+      "name": "소프트웨어보안",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE453",
+      "type": "Subject",
+      "name": "웹보안",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE495",
+      "type": "Subject",
+      "name": "독립심화학습1",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE496",
+      "type": "Subject",
+      "name": "연구연수활동1",
+      "credits": 1,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE497",
+      "type": "Subject",
+      "name": "연구연수활동2",
+      "credits": 1,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE499",
+      "type": "Subject",
+      "name": "독립심화학습2",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "EE210",
+      "type": "Subject",
+      "name": "신호와시스템",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON103",
+      "type": "Subject",
+      "name": "디자인적사고",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON211",
+      "type": "Subject",
+      "name": "게임프로그래밍입문",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON212",
+      "type": "Subject",
+      "name": "게인엔진기초",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": [
+        "게임엔진기초",
+        "게임PX디자인"
+      ]
+    },
+    {
+      "id": "SWCON221",
+      "type": "Subject",
+      "name": "마이크로서비스프로그래밍",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": [
+        "데이터센터프로그래밍"
+      ]
+    },
+    {
+      "id": "SWCON254",
+      "type": "Subject",
+      "name": "회로와신호",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON302",
+      "type": "Subject",
+      "name": "최신기술콜로키움2",
+      "credits": 2,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON311",
+      "type": "Subject",
+      "name": "게임그래픽프로그래밍",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON312",
+      "type": "Subject",
+      "name": "게임인터랙티브테크놀로지",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": [
+        "체감형기술이론및실습"
+      ]
+    },
+    {
+      "id": "SWCON313",
+      "type": "Subject",
+      "name": "가상/증강현실이론및실습",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON331",
+      "type": "Subject",
+      "name": "로봇프로그래밍",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": [
+        "미래자동차･로봇 프로그래밍"
+      ]
+    },
+    {
+      "id": "SWCON366",
+      "type": "Subject",
+      "name": "3D데이터처리",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": [
+        "로봇센서데이터처리"
+      ]
+    },
+    {
+      "id": "SWCON370",
+      "type": "Subject",
+      "name": "풀스택서비스프로그래밍",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON491",
+      "type": "Subject",
+      "name": "인공지능과게임프로그래밍",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": [
+        "게임프로그래밍을통한 인공지능과데이터분석"
+      ]
+    },
+    {
+      "id": "SWCON492",
+      "type": "Subject",
+      "name": "풀스택서비스네트워킹",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": [
+        "소프트웨어융합 네트워킹"
+      ]
+    },
+    {
+      "id": "SWCON493",
+      "type": "Subject",
+      "name": "자연언어처리",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON496",
+      "type": "Subject",
+      "name": "소프트웨어융합보안",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON495",
+      "type": "Subject",
+      "name": "강화학습",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "창업현장실습",
+      "type": "Subject",
+      "name": "창업현장실습",
+      "credits": 0,
+      "credits_note": "창업현장실습,단기현장실습/장기현장실습은 각 활동별로 3학점, 6학점, 9학점, 12학점을 산학필수학점으로 이수함",
+      "aliases": []
+    },
+    {
+      "id": "단기현장실습",
+      "type": "Subject",
+      "name": "단기현장실습",
+      "credits": 0,
+      "credits_note": "창업현장실습,단기현장실습/장기현장실습은 각 활동별로 3학점, 6학점, 9학점, 12학점을 산학필수학점으로 이수함",
+      "aliases": []
+    },
+    {
+      "id": "장기현장실습",
+      "type": "Subject",
+      "name": "장기현장실습",
+      "credits": 0,
+      "credits_note": "창업현장실습,단기현장실습/장기현장실습은 각 활동별로 3학점, 6학점, 9학점, 12학점을 산학필수학점으로 이수함",
+      "aliases": []
+    },
+    {
+      "id": "AI1003",
+      "type": "Subject",
+      "name": "인공지능수학",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "AI1001",
+      "type": "Subject",
+      "name": "인공지능개론",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "AI3002",
+      "type": "Subject",
+      "name": "인공지능과윤리",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "AI4003",
+      "type": "Subject",
+      "name": "졸업논문",
+      "credits": 0,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "AI3003",
+      "type": "Subject",
+      "name": "자연언어학습",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "AI3005",
+      "type": "Subject",
+      "name": "정보검색",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "AI3006",
+      "type": "Subject",
+      "name": "지식표현및추론",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "AI3007",
+      "type": "Subject",
+      "name": "통계적학습이론",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "AI3008",
+      "type": "Subject",
+      "name": "설명및신뢰가능한AI",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "AI4004",
+      "type": "Subject",
+      "name": "AI최신기술",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": [
+        "AI최신기술이론",
+        "최신기술이론"
+      ]
+    },
+    {
+      "id": "AI4006",
+      "type": "Subject",
+      "name": "독립심화학습1",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "AI4007",
+      "type": "Subject",
+      "name": "독립심화학습2",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "AI408",
+      "type": "Subject",
+      "name": "AI심화학습",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "APHY1002",
+      "type": "Subject",
+      "name": "물리학및실험1",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON101",
+      "type": "Subject",
+      "name": "소프트웨어융합개론",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON401",
+      "type": "Subject",
+      "name": "소프트웨어융합캡스톤디자인",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON402",
+      "type": "Subject",
+      "name": "졸업논문",
+      "credits": 0,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CES442",
+      "type": "Subject",
+      "name": "블록체인",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "EE461",
+      "type": "Subject",
+      "name": "로봇제어공학",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "ELC281",
+      "type": "Subject",
+      "name": "세계신화읽기",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "ELC471",
+      "type": "Subject",
+      "name": "테크놀로지와디지털콘텐츠",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "ID3012",
+      "type": "Subject",
+      "name": "UX디자인",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "IE208",
+      "type": "Subject",
+      "name": "응용통계학",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "IE215",
+      "type": "Subject",
+      "name": "데이터사이언스",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "IE301",
+      "type": "Subject",
+      "name": "경영과학1",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "IE302",
+      "type": "Subject",
+      "name": "경영과학2",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "IE306",
+      "type": "Subject",
+      "name": "데이터마이닝",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "IE329",
+      "type": "Subject",
+      "name": "금융공학",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "IE419",
+      "type": "Subject",
+      "name": "서비스데이터사이언스",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "ME271",
+      "type": "Subject",
+      "name": "동역학",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "ME375",
+      "type": "Subject",
+      "name": "메카트로닉스",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "ME376",
+      "type": "Subject",
+      "name": "자동제어",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "ME380",
+      "type": "Subject",
+      "name": "시스템동역학",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "ME391",
+      "type": "Subject",
+      "name": "로봇공학",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON207",
+      "type": "Subject",
+      "name": "수치해석프로그래밍",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON241",
+      "type": "Subject",
+      "name": "융합연구1",
+      "credits": 1,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON242",
+      "type": "Subject",
+      "name": "융합연구2",
+      "credits": 1,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON314",
+      "type": "Subject",
+      "name": "게임공학",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON321",
+      "type": "Subject",
+      "name": "데이터분석캡스톤디자인",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON322",
+      "type": "Subject",
+      "name": "고급데이터마이닝",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON332",
+      "type": "Subject",
+      "name": "로봇･비전캡스톤디자인",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": [
+        "미래자동차･로봇 캡스톤디자인"
+      ]
+    },
+    {
+      "id": "SWCON341",
+      "type": "Subject",
+      "name": "융합연구3",
+      "credits": 1,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON342",
+      "type": "Subject",
+      "name": "융합연구4",
+      "credits": 1,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON363",
+      "type": "Subject",
+      "name": "독립심화학습1",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON364",
+      "type": "Subject",
+      "name": "독립심화학습2",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON367",
+      "type": "Subject",
+      "name": "게임콘텐츠캡스톤디자인",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON371",
+      "type": "Subject",
+      "name": "디자인프로그래밍",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON372",
+      "type": "Subject",
+      "name": "응용데이터분석",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON423",
+      "type": "Subject",
+      "name": "프로세스마이닝",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON424",
+      "type": "Subject",
+      "name": "금융데이터분석",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON425",
+      "type": "Subject",
+      "name": "데이터사이언스및시각화",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON441",
+      "type": "Subject",
+      "name": "융합연구5",
+      "credits": 1,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON442",
+      "type": "Subject",
+      "name": "융합연구6",
+      "credits": 1,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON494",
+      "type": "Subject",
+      "name": "영상분석과패턴인식",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON256",
+      "type": "Subject",
+      "name": "데이터분석입문",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "현장실습",
+      "type": "Subject",
+      "name": "현장실습",
+      "credits": 0,
+      "credits_note": "창업현장실습,단기현장실습/장기현장실습은 각 활동별로 3학점, 6학점, 9학점, 12학점을 산학필수학점으로 이수함",
+      "aliases": []
+    },
+    {
+      "id": "AI4001",
+      "type": "Subject",
+      "name": "캡스톤디자인",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": [
+        "캡스톤디자인 1"
+      ]
+    },
+    {
+      "id": "AI4002",
+      "type": "Subject",
+      "name": "졸업프로젝트",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": [
+        "캡스톤디자인 2"
+      ]
+    },
+    {
+      "id": "AI4005",
+      "type": "Subject",
+      "name": "AI최신기술실전",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": [
+        "최신기술실전"
+      ]
+    },
+    {
+      "id": "SWCON334",
+      "type": "Subject",
+      "name": "SW스타트업프로젝트",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "DC304",
+      "type": "Subject",
+      "name": "게임학",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON368",
+      "type": "Subject",
+      "name": "실감미디어캡스톤디자인",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON255",
+      "type": "Subject",
+      "name": "기초실감미디어프로그래밍",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "IE425",
+      "type": "Subject",
+      "name": "의사결정론",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "IE414",
+      "type": "Subject",
+      "name": "금융공학",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "ME475",
+      "type": "Subject",
+      "name": "로봇공학",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "ELC482",
+      "type": "Subject",
+      "name": "세계신화읽기",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE223",
+      "type": "Subject",
+      "name": "오픈소스SW개발",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE208",
+      "type": "Subject",
+      "name": "IT기술영어 1",
+      "credits": 1,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE308",
+      "type": "Subject",
+      "name": "IT기술영어 2",
+      "credits": 1,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE309",
+      "type": "Subject",
+      "name": "IT기술영어 3",
+      "credits": 1,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE321",
+      "type": "Subject",
+      "name": "문제해결",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE323",
+      "type": "Subject",
+      "name": "파일처리",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE303",
+      "type": "Subject",
+      "name": "시스템분석및설계",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE445",
+      "type": "Subject",
+      "name": "인공지능",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE435",
+      "type": "Subject",
+      "name": "모바일프로그래밍",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE433",
+      "type": "Subject",
+      "name": "웹서비스프로그래밍",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE427",
+      "type": "Subject",
+      "name": "로봇소프트웨어",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "DC205",
+      "type": "Subject",
+      "name": "스토리텔링",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "생성예정",
+      "type": "Subject",
+      "name": "기초실감미디어프로그래밍",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "DC201",
+      "type": "Subject",
+      "name": "3D모델링",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "DC203",
+      "type": "Subject",
+      "name": "인터랙션디자인",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "DC207",
+      "type": "Subject",
+      "name": "사운드디자인",
+      "credits": 2,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "DC211",
+      "type": "Subject",
+      "name": "3D애니메이션",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "DC302",
+      "type": "Subject",
+      "name": "모션그래픽스",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "CSE338",
+      "type": "Subject",
+      "name": "인공지능",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "DC318",
+      "type": "Subject",
+      "name": "게임디자인",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "APHY1003",
+      "type": "Subject",
+      "name": "물리학 및 실험 2",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "ME275",
+      "type": "Subject",
+      "name": "전기전자회로",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "ME276",
+      "type": "Subject",
+      "name": "계측공학",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "SWCON231",
+      "type": "Subject",
+      "name": "혁신적미래자동차･ 로봇디자인",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "EE342",
+      "type": "Subject",
+      "name": "디지털신호처리",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    },
+    {
+      "id": "EE341",
+      "type": "Subject",
+      "name": "디지털통신",
+      "credits": 3,
+      "credits_note": null,
+      "aliases": []
+    }
+  ],
+  "relationships": []
+}

@@ -1,0 +1,86 @@
+[
+  {
+    "file_path": "data/소프트웨어융합대학_교육과정_2025.pdf",
+    "common_metadata": { "year": 2025 },
+    "sections": [
+      {
+        "start_page": 10, "end_page": 11, "metadata": { "department": "컴퓨터공학과" }
+      },
+      {
+        "start_page": 43, "end_page": 44, "metadata": { "department": "인공지능학과" }
+      },
+      {
+        "start_page": 74, "end_page": 76, "metadata": { "department": "소프트웨어융합학과" }
+      }
+    ]
+  },
+  {
+    "file_path": "data/소프트웨어융합대학_교육과정_2024.pdf",
+    "common_metadata": { "year": 2024 },
+    "sections": [
+      {
+        "start_page": 12, "end_page": 13, "metadata": { "department": "컴퓨터공학과" }
+      },
+      {
+        "start_page": 44, "end_page": 45, "metadata": { "department": "인공지능학과" }
+      },
+      {
+        "start_page": 71, "end_page": 73, "metadata": { "department": "소프트웨어융합학과" }
+      }
+    ]
+  },
+  {
+    "file_path": "data/소프트웨어융합대학_교육과정_2023.pdf",
+    "common_metadata": { "year": 2023 },
+    "sections": [
+      {
+        "start_page": 12, "end_page": 13, "metadata": { "department": "컴퓨터공학과" }
+      },
+      {
+        "start_page": 42, "end_page": 43, "metadata": { "department": "인공지능학과" }
+      },
+      {
+        "start_page": 70, "end_page": 72, "metadata": { "department": "소프트웨어융합학과" }
+      }
+    ]
+  },
+  {
+    "file_path": "data/소프트웨어융합대학_교육과정_2022.pdf",
+    "common_metadata": { "year": 2022 },
+    "sections": [
+      {
+        "start_page": 120, "end_page": 121, "metadata": { "department": "컴퓨터공학과" }
+      },
+      {
+        "start_page": 145, "end_page": 146, "metadata": { "department": "인공지능학과" }
+      },
+      {
+        "start_page": 160, "end_page": 162, "metadata": { "department": "소프트웨어융합학과" }
+      }
+    ]
+  },
+  {
+    "file_path": "data/소프트웨어융합대학_교육과정_2021.pdf",
+    "common_metadata": { "year": 2021 },
+    "sections": [
+      {
+        "start_page": 12, "end_page": 13, "metadata": { "department": "컴퓨터공학과" }
+      },
+      {
+        "start_page": 41, "end_page": 43, "metadata": { "department": "소프트웨어융합학과" }
+      }
+    ]
+  },
+  {
+    "file_path": "data/소프트웨어융합대학_교육과정_2020.pdf",
+    "common_metadata": { "year": 2020 },
+    "sections": [
+      {
+        "start_page": 12, "end_page": 13, "metadata": { "department": "컴퓨터공학과" }
+      },
+      {
+        "start_page": 40, "end_page": 42, "metadata": { "department": "소프트웨어융합학과" }
+      }
+    ]
+  }
+]

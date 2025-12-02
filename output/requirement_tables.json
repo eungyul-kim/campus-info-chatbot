@@ -1,0 +1,114 @@
+[
+  {
+    "metadata": {
+      "year": 2025,
+      "department": "컴퓨터공학과"
+    },
+    "table_data_as_string": "--- 페이지 4, 표 1 ---\n[['학과명', '졸업\\n이수\\n학점', '단일전공과정', None, None, None, None, None, '다전공과정', None, None, None, None, '부전공과정', None, None], [None, None, '전공학점', None, None, None, None, '타\\n전공\\n인정\\n학점', '전공학점', None, None, None, '타\\n전공\\n인정\\n학점', None, None, None], [None, None, '전공\\n기초', '전공\\n필수', '전공선택', None, '계', None, '전공\\n기초', '전공\\n필수', '전공\\n선택', '계', None, '전공\\n필수', '전공\\n선택', '계'], [None, None, None, None, '산학필\\n수', '전공선\\n택', None, None, None, None, None, None, None, None, None, None], ['컴퓨터공학과', '130', '12', '42', '12', '15', '81', '6', '9', '27', '15', '51', '-', '15', '6', '21']]"
+  },
+  {
+    "metadata": {
+      "year": 2025,
+      "department": "인공지능학과"
+    },
+    "table_data_as_string": "--- 페이지 38, 표 1 ---\n[['학과명', '졸업\\n이수\\n학점', '단일전공과정', None, None, None, None, '다전공과정', None, None, None, None], [None, None, '전공학점', None, None, None, '타\\n전공\\n인정\\n학점', '전공학점', None, None, None, '타\\n전공\\n인정\\n학점'], [None, None, '전공\\n기초', '전공\\n필수', '전공선택', '계', None, '전공\\n기초', '전공\\n필수', '전공\\n선택', '계', None], ['인공지능학과', '130', '12', '42', '27', '81', '6', '12', '30', '18', '60', '-']]"
+  },
+  {
+    "metadata": {
+      "year": 2025,
+      "department": "소프트웨어융합학과"
+    },
+    "table_data_as_string": "--- 페이지 66, 표 1 ---\n[['학과명', '구분', '전공기초', '전공필수', '전공선택', '전공과목'], ['소프트웨어\\n융합학과', '과목수', '5', '14', '67', '86'], [None, '학점수', '15', '37', '189', '241']]\n\n--- 페이지 66, 표 2 ---\n[['학과', '졸업\\n이수\\n학점', '단일전공과정', None, None, None, None, '다전공과정', None, None, None, None, '부전공과정', None, None], [None, None, '전공학점', None, None, None, '타\\n전공\\n인정\\n학점', '전공학점', None, None, None, '타\\n전공\\n인정\\n학점', None, None, None], [None, None, '전공\\n기초', '전공\\n필수', '전공\\n선택', '계', None, '전공\\n기초', '전공\\n필수', '전공\\n선택', '계', None, '전공\\n필수', '전공\\n선택', '계'], ['소프트웨어\\n융합학과', '130', '15', '37', '36', '88', '12', '15', '21', '24', '60', '-', '9', '12', '21']]"
+  },
+  {
+    "metadata": {
+      "year": 2024,
+      "department": "컴퓨터공학과"
+    },
+    "table_data_as_string": "--- 페이지 6, 표 1 ---\n[['학과명', '졸업\\n이수\\n학점', '단일전공과정', None, None, None, None, None, '다전공과정', None, None, None, None, '부전공과정', None, None], [None, None, '전공학점', None, None, None, None, '타\\n전공\\n인정\\n학점', '전공학점', None, None, None, '타\\n전공\\n인정\\n학점', None, None, None], [None, None, '전공\\n기초', '전공\\n필수', '전공선택', None, '계', None, '전공\\n기초', '전공\\n필수', '전공\\n선택', '계', None, '전공\\n필수', '전공\\n선택', '계'], [None, None, None, None, '산학\\n필수', '전공\\n선택', None, None, None, None, None, None, None, None, None, None], ['컴퓨터공학과', '130', '15', '45', '12', '15', '87', '6', '12', '27', '15', '54', '-', '15', '6', '21']]"
+  },
+  {
+    "metadata": {
+      "year": 2024,
+      "department": "인공지능학과"
+    },
+    "table_data_as_string": "--- 페이지 39, 표 1 ---\n[['학과명', '졸업\\n이수\\n학점', '단일전공과정', None, None, None, None, '다전공과정', None, None, None, None], [None, None, '전공학점', None, None, None, '타\\n전공\\n인정\\n학점', '전공학점', None, None, None, '타\\n전공\\n인정\\n학점'], [None, None, '전공\\n기초', '전공\\n필수', '전공선택', '계', None, '전공\\n기초', '전공\\n필수', '전공\\n선택', '계', None], ['인공지능학과', '130', '18', '42', '27', '87', '12', '15', '30', '18', '63', '-']]"
+  },
+  {
+    "metadata": {
+      "year": 2024,
+      "department": "소프트웨어융합학과"
+    },
+    "table_data_as_string": "--- 페이지 63, 표 1 ---\n[['학과명', '구분', '전공기초', '전공필수', '전공선택', '전공과목'], ['소프트웨어\\n융합학과', '과목수', '5', '14', '75', '94'], [None, '학점수', '15', '37', '183', '235']]\n\n--- 페이지 63, 표 2 ---\n[['학과', '졸업\\n이수\\n학점', '단일전공과정', None, None, None, None, '다전공과정', None, None, None, None, '부전공과정', None, None], [None, None, '전공학점', None, None, None, '타\\n전공\\n인정\\n학점', '전공학점', None, None, None, '타\\n전공\\n인정\\n학점', None, None, None], [None, None, '전공\\n기초', '전공\\n필수', '전공\\n선택', '계', None, '전공\\n기초', '전공\\n필수', '전공\\n선택', '계', None, '전공\\n필수', '전공\\n선택', '계'], ['소프트웨어\\n융합학과', '130', '15', '37', '36', '88', '12', '15', '21', '24', '60', '-', '9', '12', '21']]"
+  },
+  {
+    "metadata": {
+      "year": 2023,
+      "department": "컴퓨터공학과"
+    },
+    "table_data_as_string": "--- 페이지 6, 표 1 ---\n[['학과명', '졸업\\n이수\\n학점', '단일전공과정', None, None, None, None, None, '다전공과정', None, None, None, None, '부전공과정', None, None], [None, None, '전공학점', None, None, None, None, '타\\n전공\\n인정\\n학점', '전공학점', None, None, None, '타\\n전공\\n인정\\n학점', None, None, None], [None, None, '전공\\n기초', '전공\\n필수', '전공선택', None, '계', None, '전공\\n기초', '전공\\n필수', '전공\\n선택', '계', None, '전공\\n필수', '전공\\n선택', '계'], [None, None, None, None, '산학\\n필수', '전공\\n선택', None, None, None, None, None, None, None, None, None, None], ['컴퓨터공학과', '140', '18', '45', '12', '18', '93', '6', '12', '27', '15', '54', '-', '15', '6', '21']]"
+  },
+  {
+    "metadata": {
+      "year": 2023,
+      "department": "인공지능학과"
+    },
+    "table_data_as_string": "--- 페이지 37, 표 1 ---\n[['학과명', '졸업\\n이수\\n학점', '단일전공과정', None, None, None, None, '다전공과정', None, None, None, None], [None, None, '전공학점', None, None, None, '타\\n전공\\n인정\\n학점', '전공학점', None, None, None, '타\\n전공\\n인정\\n학점'], [None, None, '전공\\n기초', '전공\\n필수', '전공선택', '계', None, '전공\\n기초', '전공\\n필수', '전공\\n선택', '계', None], ['인공지능학과', '130', '18', '42', '27', '87', '12', '15', '30', '18', '63', '-']]"
+  },
+  {
+    "metadata": {
+      "year": 2023,
+      "department": "소프트웨어융합학과"
+    },
+    "table_data_as_string": "--- 페이지 62, 표 1 ---\n[['학과명', '구분', '전공기초', '전공필수', '전공선택', '전공과목'], ['소프트웨어\\n융합학과', '과목수', '5', '14', '69', '88'], [None, '학점수', '15', '37', '189', '241']]\n\n--- 페이지 62, 표 2 ---\n[['학과', '졸업\\n이수\\n학점', '단일전공과정', None, None, None, None, '다전공과정', None, None, None, None, '부전공과정', None, None], [None, None, '전공학점', None, None, None, '타\\n전공\\n인정\\n학점', '전공학점', None, None, None, '타\\n전공\\n인정\\n학점', None, None, None], [None, None, '전공\\n기초', '전공\\n필수', '전공\\n선택', '계', None, '전공\\n기초', '전공\\n필수', '전공\\n선택', '계', None, '전공\\n필수', '전공\\n선택', '계'], ['소프트웨어\\n융합학과', '130', '15', '37', '36', '88', '12', '15', '21', '24', '60', '-', '9', '12', '21']]"
+  },
+  {
+    "metadata": {
+      "year": 2022,
+      "department": "컴퓨터공학과"
+    },
+    "table_data_as_string": "--- 페이지 114, 표 1 ---\n[['학과명', '졸업\\n이수\\n학점', '단일전공과정', None, None, None, None, None, '다전공과정', None, None, None, None, '부전공과정 1', None, None, '부전공과정 2\\n(소프트웨어과정)', None, None], [None, None, '전공학점', None, None, None, None, '타\\n전공\\n인정\\n학점', '전공학점', None, None, None, '타\\n전공\\n인정\\n학점', None, None, None, None, None, None], [None, None, '전공\\n기초', '전공\\n필수', '전공선택', None, '계', None, '전공\\n기초', '전공\\n필수', '전공\\n선택', '계', None, '전공\\n필수', '전공\\n선택', '계', '전공\\n필수', '전공\\n선택', '계'], [None, None, None, None, '산학\\n필수', '전공\\n선택', None, None, None, None, None, None, None, None, None, None, None, None, None], ['컴퓨터공학과', '140', '18', '48', '12', '18', '96', '12', '12', '27', '15', '54', '-', '15', '6', '21', '24', '6', '30']]"
+  },
+  {
+    "metadata": {
+      "year": 2022,
+      "department": "인공지능학과"
+    },
+    "table_data_as_string": "--- 페이지 140, 표 1 ---\n[['학과명', '졸업\\n이수\\n학점', '단일전공과정', None, None, None, None, '다전공과정', None, None, None, None], [None, None, '전공학점', None, None, None, '타\\n전공\\n인정\\n학점', '전공학점', None, None, None, '타\\n전공\\n인정\\n학점'], [None, None, '전공\\n기초', '전공\\n필수', '전공선택', '계', None, '전공\\n기초', '전공\\n필수', '전공\\n선택', '계', None], ['인공지능학과', '130', '18', '45', '27', '90', '12', '15', '33', '18', '66', '-']]"
+  },
+  {
+    "metadata": {
+      "year": 2022,
+      "department": "소프트웨어융합학과"
+    },
+    "table_data_as_string": "--- 페이지 151, 표 1 ---\n[['학과명', '구분', '전공기초', '전공필수', '전공선택', '전공과목'], ['소프트웨어\\n융합학과', '과목수', '5', '14', '69', '88'], [None, '학점수', '15', '37', '189', '241']]\n\n--- 페이지 151, 표 2 ---\n[['학과', '졸업\\n이수\\n학점', '단일전공과정', None, None, None, None, '다전공과정', None, None, None, None, '부전공과정', None, None], [None, None, '전공학점', None, None, None, '타\\n전공\\n인정\\n학점', '전공학점', None, None, None, '타\\n전공\\n인정\\n학점', None, None, None], [None, None, '전공\\n기초', '전공\\n필수', '전공\\n선택', '계', None, '전공\\n기초', '전공\\n필수', '전공\\n선택', '계', None, '전공\\n필수', '전공\\n선택', '계'], ['소프트웨어\\n융합학과', '130', '15', '37', '36', '88', '12', '15', '21', '24', '60', '-', '9', '12', '21']]"
+  },
+  {
+    "metadata": {
+      "year": 2021,
+      "department": "컴퓨터공학과"
+    },
+    "table_data_as_string": "--- 페이지 6, 표 1 ---\n[['학과명', '졸업\\n이수\\n학점', '단일전공과정', None, None, None, None, None, '다전공과정', None, None, None, None, '부전공과정 1', None, None, '부전공과정 2\\n(소프트웨어과정)', None, None], [None, None, '전공학점', None, None, None, None, '타\\n전공\\n인정\\n학점', '전공학점', None, None, None, '타\\n전공\\n인정\\n학점', None, None, None, None, None, None], [None, None, '전공\\n기초', '전공\\n필수', '전공선택', None, '계', None, '전공\\n기초', '전공\\n필수', '전공\\n선택', '계', None, '전공\\n필수', '전공\\n선택', '계', '전공\\n필수', '전공\\n선택', '계'], [None, None, None, None, '산학\\n필수', '전공\\n선택', None, None, None, None, None, None, None, None, None, None, None, None, None], ['컴퓨터공학과', '140', '18', '48', '12', '18', '96', '12', '12', '27', '15', '54', '-', '15', '6', '21', '24', '6', '30']]"
+  },
+  {
+    "metadata": {
+      "year": 2021,
+      "department": "소프트웨어융합학과"
+    },
+    "table_data_as_string": "--- 페이지 33, 표 1 ---\n[['학과', '졸업\\n이수\\n학점', '단일전공과정', None, None, None, None, '다전공과정', None, None, None, None, '부전공(심화형)\\n과정', None, None, '부전공과정', None, None], [None, None, '전공학점', None, None, None, '타\\n전공\\n인정\\n학점', '전공학점', None, None, None, '타\\n전공\\n인정\\n학점', None, None, None, None, None, None], [None, None, '전공\\n기초', '전공\\n필수', '전공\\n선택', '계', None, '전공\\n기초', '전공\\n필수', '전공\\n선택', '계', None, '전공\\n필수', '전공\\n선택', '계', '전공\\n필수', '전공\\n선택', '계'], ['소프트웨어\\n융합학과', '130', '15', '37', '36', '88', '12', '15', '21', '24', '60', '-', '18', '12', '30', '9', '12', '21']]"
+  },
+  {
+    "metadata": {
+      "year": 2020,
+      "department": "컴퓨터공학과"
+    },
+    "table_data_as_string": "--- 페이지 6, 표 1 ---\n[['학과명', '졸업\\n이수\\n학점', '단일전공과정', None, None, None, None, None, '다전공과정', None, None, None, None, '부전공과정1', None, None, '부전공과정2\\n(소프트웨어과정)', None, None], [None, None, '전공학점', None, None, None, None, '타\\n전공\\n인정\\n학점', '전공학점', None, None, None, '타\\n전공\\n인정\\n학점', None, None, None, None, None, None], [None, None, '전공\\n기초', '전공\\n필수', '전공선택', None, '계', None, '전공\\n기초', '전공\\n필수', '전공\\n선택', '계', None, '전공\\n필수', '전공\\n선택', '계', '전공\\n필수', '전공\\n선택', '계'], [None, None, None, None, '산학\\n필수', '전공\\n선택', None, None, None, None, None, None, None, None, None, None, None, None, None], ['컴퓨터공학과', '140', '18', '45', '12', '21', '96', '12', '12', '27', '15', '54', '-', '15', '6', '21', '24', '6', '30']]"
+  },
+  {
+    "metadata": {
+      "year": 2020,
+      "department": "소프트웨어융합학과"
+    },
+    "table_data_as_string": "--- 페이지 32, 표 1 ---\n[['학과', '졸업\\n이수\\n학점', '단일전공과정', None, None, None, None, '다전공과정', None, None, None, None, '부전공(심화형)\\n과정', None, None, '부전공(인증형/\\n창업형/실현형) 과정', None, None], [None, None, '전공학점', None, None, None, '타\\n전공\\n인정\\n학점', '전공학점', None, None, None, '타\\n전공\\n인정\\n학점', None, None, None, None, None, None], [None, None, '전공\\n기초', '전공\\n필수', '전공\\n선택', '계', None, '전공\\n기초', '전공\\n필수', '전공\\n선택', '계', None, '전공\\n필수', '전공\\n선택', '계', '전공\\n필수', '전공\\n선택', '계'], ['소프트웨어\\n융합학과', '130', '15', '37', '36', '88', '12', '15', '21', '24', '60', '-', '18', '12', '30', '12', '9', '21']]"
+  }
+]
