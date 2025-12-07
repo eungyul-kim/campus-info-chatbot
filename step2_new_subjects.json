@@ -1,0 +1,396 @@
+{
+  "nodes": [
+    {
+      "id": "기초공학설계",
+      "type": "Subject",
+      "name": "기초공학설계",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "프로그래밍기초",
+      "type": "Subject",
+      "name": "프로그래밍기초",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "고급객체지향프로그래밍",
+      "type": "Subject",
+      "name": "고급객체지향프로그래밍",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "컴퓨터공학개론",
+      "type": "Subject",
+      "name": "컴퓨터공학개론",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "창의적설계1",
+      "type": "Subject",
+      "name": "창의적설계1",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "창의적설계2",
+      "type": "Subject",
+      "name": "창의적설계2",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "창의적설계",
+      "type": "Subject",
+      "name": "창의적설계",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "창의적종합설계",
+      "type": "Subject",
+      "name": "창의적종합설계",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "졸업연구",
+      "type": "Subject",
+      "name": "졸업연구",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "설계프로젝트A",
+      "type": "Subject",
+      "name": "설계프로젝트A",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "설계프로젝트B",
+      "type": "Subject",
+      "name": "설계프로젝트B",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "설계프로젝트C",
+      "type": "Subject",
+      "name": "설계프로젝트C",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "설계프로젝트D",
+      "type": "Subject",
+      "name": "설계프로젝트D",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "현장연수활동",
+      "type": "Subject",
+      "name": "현장연수활동",
+      "credits": 1,
+      "credits_note": null
+    },
+    {
+      "id": "머신러닝",
+      "type": "Subject",
+      "name": "머신러닝",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "오픈소스SW개발",
+      "type": "Subject",
+      "name": "오픈소스SW개발",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "모바일프로로그래밍",
+      "type": "Subject",
+      "name": "모바일프로로그래밍",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "웹서비스프로그래밍",
+      "type": "Subject",
+      "name": "웹서비스프로그래밍",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "로봇소프트웨어",
+      "type": "Subject",
+      "name": "로봇소프트웨어",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "멀티미디어시스템",
+      "type": "Subject",
+      "name": "멀티미디어시스템",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "메타버스처리",
+      "type": "Subject",
+      "name": "메타버스처리",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "체감형기술이론및실습",
+      "type": "Subject",
+      "name": "체감형기술이론및실습",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "형식언어및컴파일러",
+      "type": "Subject",
+      "name": "형식언어및컴파일러",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "프로그래밍언어구조론",
+      "type": "Subject",
+      "name": "프로그래밍언어구조론",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "모바일프로그래밍",
+      "type": "Subject",
+      "name": "모바일프로그래밍",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "IoT디지털시스템",
+      "type": "Subject",
+      "name": "IoT디지털시스템",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "IoT소프트웨어",
+      "type": "Subject",
+      "name": "IoT소프트웨어",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "IoT네트워크",
+      "type": "Subject",
+      "name": "IoT네트워크",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "AMTH1002",
+      "type": "Subject",
+      "name": "미분적분학1",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "AMTH1003",
+      "type": "Subject",
+      "name": "고급미분적분학",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "MATH1001",
+      "type": "Subject",
+      "name": "미적분학및연습1",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "MATH1002",
+      "type": "Subject",
+      "name": "미적분적분학및연습2",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "MATH2111",
+      "type": "Subject",
+      "name": "선형대수학1",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "MATH2112",
+      "type": "Subject",
+      "name": "선형대수학2",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "MATH1101",
+      "type": "Subject",
+      "name": "미적분학및연습1",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "IE203",
+      "type": "Subject",
+      "name": "공학수학1",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "ME113",
+      "type": "Subject",
+      "name": "공학수학1",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "IE204",
+      "type": "Subject",
+      "name": "공학수학2",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "ME202",
+      "type": "Subject",
+      "name": "공학수학2",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "APHY1000",
+      "type": "Subject",
+      "name": "물리학1",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "APHY1004",
+      "type": "Subject",
+      "name": "일반물리",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "CSE425",
+      "type": "Subject",
+      "name": "임베디드소프트웨어",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "ME373",
+      "type": "Subject",
+      "name": "시스템모델링",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "CSE329",
+      "type": "Subject",
+      "name": "Java프로그래밍",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "IE202",
+      "type": "Subject",
+      "name": "고객관계관리",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "IE207",
+      "type": "Subject",
+      "name": "실험통계학",
+      "credits": 3,
+      "credits_note": null
+    },
+    {
+      "id": "SWCON243",
+      "type": "Subject",
+      "name": "외국인학생프렌드십",
+      "credits": 1,
+      "credits_note": null
+    },
+    {
+      "id": "SWCON244",
+      "type": "Subject",
+      "name": "프로그래밍재능기부1",
+      "credits": 1,
+      "credits_note": null
+    },
+    {
+      "id": "SWCON245",
+      "type": "Subject",
+      "name": "프로그래밍재능기부2",
+      "credits": 1,
+      "credits_note": null
+    },
+    {
+      "id": "SWCON346",
+      "type": "Subject",
+      "name": "프로그래밍재능기부3",
+      "credits": 1,
+      "credits_note": null
+    },
+    {
+      "id": "SWCON343",
+      "type": "Subject",
+      "name": "프로그래밍경진대회",
+      "credits": 1,
+      "credits_note": null
+    },
+    {
+      "id": "SWCON344",
+      "type": "Subject",
+      "name": "특허출원",
+      "credits": 1,
+      "credits_note": null
+    },
+    {
+      "id": "SWCON347",
+      "type": "Subject",
+      "name": "소프트웨어도서출간",
+      "credits": 1,
+      "credits_note": null
+    },
+    {
+      "id": "SWCON348",
+      "type": "Subject",
+      "name": "첨단기술백서출간",
+      "credits": 1,
+      "credits_note": null
+    },
+    {
+      "id": "SWCON443",
+      "type": "Subject",
+      "name": "프로그램앱스토어등록",
+      "credits": 1,
+      "credits_note": null
+    },
+    {
+      "id": "DC314",
+      "type": "Subject",
+      "name": "캡스톤디자인기반게임디자인",
+      "credits": 3,
+      "credits_note": null
+    }
+  ]
+}

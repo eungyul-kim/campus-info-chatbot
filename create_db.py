@@ -86,14 +86,15 @@ def process_pdf(config_path):
     for i, chunk in enumerate(docs):
         chunk.metadata['seq_num'] = prev_count + i + 1
     
-    # 업로드 
+    # 임베딩 
     embeddings = HuggingFaceEmbeddings(model_name=EMBEDDING_MODEL)
+    
+    # 업로드(100개씩)
     vectorstore = PineconeVectorStore.from_existing_index(
         index_name=INDEX_NAME,
         embedding=embeddings
     )
 
-    # 100개씩 나눠서
     batch_size = 100
     for i in range(0, len(docs), batch_size):
         batch = docs[i : i + batch_size]

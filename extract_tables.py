@@ -1,5 +1,5 @@
 """
-PDF에서 과목/졸업요건 관련 표를 추출해 JSON으로 저장
+PDF에서 과목/졸업요건/대체 관련 표를 추출해 JSON으로 저장
 
 - 입력: 처리할 PDF 경로와 페이지 범위가 담긴 JSON
 - 출력: 표 데이터를 문자열로 담은 JSON
@@ -9,6 +9,7 @@ import json
 import fitz 
 import os
 
+# 입출력 데이터는 각 노드, 관계 생성시 달라짐
 INPUT = 'manifest/subject.json' 
 OUTPUT = "output/subject_tables.json" 
 

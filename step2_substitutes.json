@@ -1,0 +1,1134 @@
+{
+  "relationships": [
+    {
+      "source_id": "AMTH1009",
+      "target_id": "미분적분학1",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "미분적분학",
+      "target_name": "미분적분학1"
+    },
+    {
+      "source_id": "SWCON103",
+      "target_id": "기초공학설계",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "디자인적사고",
+      "target_name": "기초공학설계"
+    },
+    {
+      "source_id": "SWCON104",
+      "target_id": "프로그래밍기초",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "웹/파이선프로그래밍",
+      "target_name": "프로그래밍기초"
+    },
+    {
+      "source_id": "CSE103",
+      "target_id": "고급객체지향프로그래밍",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "객체지향프로그래밍",
+      "target_name": "고급객체지향프로그래밍"
+    },
+    {
+      "source_id": "SWCON201",
+      "target_id": "컴퓨터공학개론",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "오픈소스SW개발방법및도구",
+      "target_name": "컴퓨터공학개론"
+    },
+    {
+      "source_id": "CSE406",
+      "target_id": "창의적설계1",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "캡스톤디자인",
+      "target_name": "창의적설계1"
+    },
+    {
+      "source_id": "CSE405",
+      "target_id": "창의적설계2",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "졸업프로젝트",
+      "target_name": "창의적설계2"
+    },
+    {
+      "source_id": "CSE406",
+      "target_id": "창의적설계",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "캡스톤디자인",
+      "target_name": "창의적설계"
+    },
+    {
+      "source_id": "CSE406",
+      "target_id": "창의적종합설계",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "캡스톤디자인",
+      "target_name": "창의적종합설계"
+    },
+    {
+      "source_id": "CSE405",
+      "target_id": "졸업연구",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "졸업프로젝트",
+      "target_name": "졸업연구"
+    },
+    {
+      "source_id": "CSE438",
+      "target_id": "설계프로젝트A",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "최신기술콜로키움1",
+      "target_name": "설계프로젝트A"
+    },
+    {
+      "source_id": "SWCON302",
+      "target_id": "설계프로젝트A",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "최신기술콜로키움2",
+      "target_name": "설계프로젝트A"
+    },
+    {
+      "source_id": "CSE330",
+      "target_id": "설계프로젝트A",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "SW스타트업비즈니스",
+      "target_name": "설계프로젝트A"
+    },
+    {
+      "source_id": "SWCON334",
+      "target_id": "설계프로젝트A",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "SW스타트업프로젝트",
+      "target_name": "설계프로젝트A"
+    },
+    {
+      "source_id": "CSE434",
+      "target_id": "설계프로젝트A",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "빅데이터프로그래밍",
+      "target_name": "설계프로젝트A"
+    },
+    {
+      "source_id": "CSE436",
+      "target_id": "설계프로젝트A",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "빅데이터프로젝트",
+      "target_name": "설계프로젝트A"
+    },
+    {
+      "source_id": "CSE335",
+      "target_id": "설계프로젝트A",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "클라우드컴퓨팅",
+      "target_name": "설계프로젝트A"
+    },
+    {
+      "source_id": "CSE437",
+      "target_id": "설계프로젝트A",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "클라우드프로젝트",
+      "target_name": "설계프로젝트A"
+    },
+    {
+      "source_id": "CSE450",
+      "target_id": "설계프로젝트A",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "모바일/웹서비스프로그래밍",
+      "target_name": "설계프로젝트A"
+    },
+    {
+      "source_id": "CSE451",
+      "target_id": "설계프로젝트A",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "모바일/웹서비스프로젝트",
+      "target_name": "설계프로젝트A"
+    },
+    {
+      "source_id": "CSE496",
+      "target_id": "설계프로젝트A",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "연구연수활동1",
+      "target_name": "설계프로젝트A"
+    },
+    {
+      "source_id": "CSE497",
+      "target_id": "설계프로젝트A",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "연구연수활동2",
+      "target_name": "설계프로젝트A"
+    },
+    {
+      "source_id": "CSE438",
+      "target_id": "설계프로젝트B",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "최신기술콜로키움1",
+      "target_name": "설계프로젝트B"
+    },
+    {
+      "source_id": "SWCON302",
+      "target_id": "설계프로젝트B",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "최신기술콜로키움2",
+      "target_name": "설계프로젝트B"
+    },
+    {
+      "source_id": "CSE330",
+      "target_id": "설계프로젝트B",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "SW스타트업비즈니스",
+      "target_name": "설계프로젝트B"
+    },
+    {
+      "source_id": "SWCON334",
+      "target_id": "설계프로젝트B",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "SW스타트업프로젝트",
+      "target_name": "설계프로젝트B"
+    },
+    {
+      "source_id": "CSE434",
+      "target_id": "설계프로젝트B",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "빅데이터프로그래밍",
+      "target_name": "설계프로젝트B"
+    },
+    {
+      "source_id": "CSE436",
+      "target_id": "설계프로젝트B",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "빅데이터프로젝트",
+      "target_name": "설계프로젝트B"
+    },
+    {
+      "source_id": "CSE335",
+      "target_id": "설계프로젝트B",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "클라우드컴퓨팅",
+      "target_name": "설계프로젝트B"
+    },
+    {
+      "source_id": "CSE437",
+      "target_id": "설계프로젝트B",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "클라우드프로젝트",
+      "target_name": "설계프로젝트B"
+    },
+    {
+      "source_id": "CSE450",
+      "target_id": "설계프로젝트B",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "모바일/웹서비스프로그래밍",
+      "target_name": "설계프로젝트B"
+    },
+    {
+      "source_id": "CSE451",
+      "target_id": "설계프로젝트B",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "모바일/웹서비스프로젝트",
+      "target_name": "설계프로젝트B"
+    },
+    {
+      "source_id": "CSE496",
+      "target_id": "설계프로젝트B",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "연구연수활동1",
+      "target_name": "설계프로젝트B"
+    },
+    {
+      "source_id": "CSE497",
+      "target_id": "설계프로젝트B",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "연구연수활동2",
+      "target_name": "설계프로젝트B"
+    },
+    {
+      "source_id": "CSE438",
+      "target_id": "설계프로젝트C",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "최신기술콜로키움1",
+      "target_name": "설계프로젝트C"
+    },
+    {
+      "source_id": "SWCON302",
+      "target_id": "설계프로젝트C",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "최신기술콜로키움2",
+      "target_name": "설계프로젝트C"
+    },
+    {
+      "source_id": "CSE330",
+      "target_id": "설계프로젝트C",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "SW스타트업비즈니스",
+      "target_name": "설계프로젝트C"
+    },
+    {
+      "source_id": "SWCON334",
+      "target_id": "설계프로젝트C",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "SW스타트업프로젝트",
+      "target_name": "설계프로젝트C"
+    },
+    {
+      "source_id": "CSE434",
+      "target_id": "설계프로젝트C",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "빅데이터프로그래밍",
+      "target_name": "설계프로젝트C"
+    },
+    {
+      "source_id": "CSE436",
+      "target_id": "설계프로젝트C",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "빅데이터프로젝트",
+      "target_name": "설계프로젝트C"
+    },
+    {
+      "source_id": "CSE335",
+      "target_id": "설계프로젝트C",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "클라우드컴퓨팅",
+      "target_name": "설계프로젝트C"
+    },
+    {
+      "source_id": "CSE437",
+      "target_id": "설계프로젝트C",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "클라우드프로젝트",
+      "target_name": "설계프로젝트C"
+    },
+    {
+      "source_id": "CSE450",
+      "target_id": "설계프로젝트C",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "모바일/웹서비스프로그래밍",
+      "target_name": "설계프로젝트C"
+    },
+    {
+      "source_id": "CSE451",
+      "target_id": "설계프로젝트C",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "모바일/웹서비스프로젝트",
+      "target_name": "설계프로젝트C"
+    },
+    {
+      "source_id": "CSE496",
+      "target_id": "설계프로젝트C",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "연구연수활동1",
+      "target_name": "설계프로젝트C"
+    },
+    {
+      "source_id": "CSE497",
+      "target_id": "설계프로젝트C",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "연구연수활동2",
+      "target_name": "설계프로젝트C"
+    },
+    {
+      "source_id": "CSE438",
+      "target_id": "설계프로젝트D",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "최신기술콜로키움1",
+      "target_name": "설계프로젝트D"
+    },
+    {
+      "source_id": "SWCON302",
+      "target_id": "설계프로젝트D",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "최신기술콜로키움2",
+      "target_name": "설계프로젝트D"
+    },
+    {
+      "source_id": "CSE330",
+      "target_id": "설계프로젝트D",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "SW스타트업비즈니스",
+      "target_name": "설계프로젝트D"
+    },
+    {
+      "source_id": "SWCON334",
+      "target_id": "설계프로젝트D",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "SW스타트업프로젝트",
+      "target_name": "설계프로젝트D"
+    },
+    {
+      "source_id": "CSE434",
+      "target_id": "설계프로젝트D",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "빅데이터프로그래밍",
+      "target_name": "설계프로젝트D"
+    },
+    {
+      "source_id": "CSE436",
+      "target_id": "설계프로젝트D",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "빅데이터프로젝트",
+      "target_name": "설계프로젝트D"
+    },
+    {
+      "source_id": "CSE335",
+      "target_id": "설계프로젝트D",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "클라우드컴퓨팅",
+      "target_name": "설계프로젝트D"
+    },
+    {
+      "source_id": "CSE437",
+      "target_id": "설계프로젝트D",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "클라우드프로젝트",
+      "target_name": "설계프로젝트D"
+    },
+    {
+      "source_id": "CSE450",
+      "target_id": "설계프로젝트D",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "모바일/웹서비스프로그래밍",
+      "target_name": "설계프로젝트D"
+    },
+    {
+      "source_id": "CSE451",
+      "target_id": "설계프로젝트D",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "모바일/웹서비스프로젝트",
+      "target_name": "설계프로젝트D"
+    },
+    {
+      "source_id": "CSE496",
+      "target_id": "설계프로젝트D",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "연구연수활동1",
+      "target_name": "설계프로젝트D"
+    },
+    {
+      "source_id": "CSE497",
+      "target_id": "설계프로젝트D",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "연구연수활동2",
+      "target_name": "설계프로젝트D"
+    },
+    {
+      "source_id": "단기현장실습",
+      "target_id": "현장연수활동",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "단기현장실습",
+      "target_name": "현장연수활동"
+    },
+    {
+      "source_id": "장기현장실습",
+      "target_id": "현장연수활동",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "장기현장실습",
+      "target_name": "현장연수활동"
+    },
+    {
+      "source_id": "단기현장실습",
+      "target_id": "현장실습",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "단기현장실습",
+      "target_name": "현장실습"
+    },
+    {
+      "source_id": "CSE331",
+      "target_id": "머신러닝",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "딥러닝",
+      "target_name": "머신러닝"
+    },
+    {
+      "source_id": "SWCON201",
+      "target_id": "오픈소스SW개발",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "오픈소스SW개발방법및도구",
+      "target_name": "오픈소스SW개발"
+    },
+    {
+      "source_id": "CSE450",
+      "target_id": "모바일프로로그래밍",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "모바일/웹서비스프로그래밍",
+      "target_name": "모바일프로로그래밍"
+    },
+    {
+      "source_id": "CSE450",
+      "target_id": "웹서비스프로그래밍",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "모바일/웹서비스프로그래밍",
+      "target_name": "웹서비스프로그래밍"
+    },
+    {
+      "source_id": "SWCON331",
+      "target_id": "로봇소프트웨어",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "로봇프로그래밍",
+      "target_name": "로봇소프트웨어"
+    },
+    {
+      "source_id": "CSE324",
+      "target_id": "멀티미디어시스템",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "메타버스시스템",
+      "target_name": "멀티미디어시스템"
+    },
+    {
+      "source_id": "CSE430",
+      "target_id": "메타버스처리",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "메타버스테이터처리",
+      "target_name": "메타버스처리"
+    },
+    {
+      "source_id": "SWCON312",
+      "target_id": "체감형기술이론및실습",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "게임인터랙티브테크놀로지",
+      "target_name": "체감형기술이론및실습"
+    },
+    {
+      "source_id": "CSE322",
+      "target_id": "형식언어및컴파일러",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "컴파일러",
+      "target_name": "형식언어및컴파일러"
+    },
+    {
+      "source_id": "CSE328",
+      "target_id": "프로그래밍언어구조론",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "프로그래밍언어론",
+      "target_name": "프로그래밍언어구조론"
+    },
+    {
+      "source_id": "CSE450",
+      "target_id": "모바일프로그래밍",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "모바일/웹서비스프로그래밍",
+      "target_name": "모바일프로그래밍"
+    },
+    {
+      "source_id": "CSE439",
+      "target_id": "IoT디지털시스템",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "AIoT디지털시스템",
+      "target_name": "IoT디지털시스템"
+    },
+    {
+      "source_id": "CSE440",
+      "target_id": "IoT소프트웨어",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "AIoT소프트웨어",
+      "target_name": "IoT소프트웨어"
+    },
+    {
+      "source_id": "CSE444",
+      "target_id": "IoT네트워크",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "교과목 변경/대체",
+      "type": "SUBSTITUTES",
+      "source_name": "AIoT네트워크",
+      "target_name": "IoT네트워크"
+    },
+    {
+      "source_id": "MATH1101",
+      "target_id": "AMTH1002",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "대체 인정 교과목",
+      "type": "SUBSTITUTES",
+      "source_name": "미적분학및연습1",
+      "target_name": "미분적분학1"
+    },
+    {
+      "source_id": "MATH1102",
+      "target_id": "AMTH1003",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "대체 인정 교과목",
+      "type": "SUBSTITUTES",
+      "source_name": "MATH1102",
+      "target_name": "고급미분적분학"
+    },
+    {
+      "source_id": "MATH1101",
+      "target_id": "AMTH1009",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "대체 인정 교과목",
+      "type": "SUBSTITUTES",
+      "source_name": "미적분학및연습1",
+      "target_name": "미분적분학"
+    },
+    {
+      "source_id": "MATH1102",
+      "target_id": "AMTH1009",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "대체 인정 교과목",
+      "type": "SUBSTITUTES",
+      "source_name": "MATH1102",
+      "target_name": "미분적분학"
+    },
+    {
+      "source_id": "MATH2411",
+      "target_id": "AMTH1001",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "대체 인정 교과목",
+      "type": "SUBSTITUTES",
+      "source_name": "MATH2411",
+      "target_name": "미분방정식"
+    },
+    {
+      "source_id": "MATH2412",
+      "target_id": "AMTH1001",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "대체 인정 교과목",
+      "type": "SUBSTITUTES",
+      "source_name": "MATH2412",
+      "target_name": "미분방정식"
+    },
+    {
+      "source_id": "MATH2111",
+      "target_id": "AMTH1004",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "대체 인정 교과목",
+      "type": "SUBSTITUTES",
+      "source_name": "선형대수학1",
+      "target_name": "선형대수"
+    },
+    {
+      "source_id": "MATH2112",
+      "target_id": "AMTH1004",
+      "department": "컴퓨터공학과",
+      "year": 2025,
+      "note": "대체 인정 교과목",
+      "type": "SUBSTITUTES",
+      "source_name": "선형대수학2",
+      "target_name": "선형대수"
+    },
+    {
+      "source_id": "AMTH1009",
+      "target_id": "MATH1001",
+      "department": "인공지능학과",
+      "year": 2025,
+      "note": "중 한 과목",
+      "type": "SUBSTITUTES",
+      "source_name": "미분적분학",
+      "target_name": "미적분학및연습1"
+    },
+    {
+      "source_id": "AMTH1009",
+      "target_id": "MATH1002",
+      "department": "인공지능학과",
+      "year": 2025,
+      "note": "중 한 과목",
+      "type": "SUBSTITUTES",
+      "source_name": "미분적분학",
+      "target_name": "미적분적분학및연습2"
+    },
+    {
+      "source_id": "AMTH1004",
+      "target_id": "MATH2111",
+      "department": "인공지능학과",
+      "year": 2025,
+      "note": "중 한 과목",
+      "type": "SUBSTITUTES",
+      "source_name": "선형대수",
+      "target_name": "선형대수학1"
+    },
+    {
+      "source_id": "AMTH1004",
+      "target_id": "MATH2112",
+      "department": "인공지능학과",
+      "year": 2025,
+      "note": "중 한 과목",
+      "type": "SUBSTITUTES",
+      "source_name": "선형대수",
+      "target_name": "선형대수학2"
+    },
+    {
+      "source_id": "AMTH1009",
+      "target_id": "MATH1101",
+      "department": "소프트웨어융합학과",
+      "year": 2025,
+      "note": "서울캠퍼스",
+      "type": "SUBSTITUTES",
+      "source_name": "미분적분학",
+      "target_name": "미적분학및연습1"
+    },
+    {
+      "source_id": "AMTH1001",
+      "target_id": "IE203",
+      "department": "소프트웨어융합학과",
+      "year": 2025,
+      "note": null,
+      "type": "SUBSTITUTES",
+      "source_name": "미분방정식",
+      "target_name": "공학수학1"
+    },
+    {
+      "source_id": "AMTH1001",
+      "target_id": "ME113",
+      "department": "소프트웨어융합학과",
+      "year": 2025,
+      "note": null,
+      "type": "SUBSTITUTES",
+      "source_name": "미분방정식",
+      "target_name": "공학수학1"
+    },
+    {
+      "source_id": "AMTH1004",
+      "target_id": "IE204",
+      "department": "소프트웨어융합학과",
+      "year": 2025,
+      "note": null,
+      "type": "SUBSTITUTES",
+      "source_name": "선형대수",
+      "target_name": "공학수학2"
+    },
+    {
+      "source_id": "AMTH1004",
+      "target_id": "ME202",
+      "department": "소프트웨어융합학과",
+      "year": 2025,
+      "note": null,
+      "type": "SUBSTITUTES",
+      "source_name": "선형대수",
+      "target_name": "공학수학2"
+    },
+    {
+      "source_id": "APHY1002",
+      "target_id": "APHY1000",
+      "department": "소프트웨어융합학과",
+      "year": 2025,
+      "note": null,
+      "type": "SUBSTITUTES",
+      "source_name": "물리학및실험1",
+      "target_name": "물리학1"
+    },
+    {
+      "source_id": "APHY1002",
+      "target_id": "APHY1004",
+      "department": "소프트웨어융합학과",
+      "year": 2025,
+      "note": null,
+      "type": "SUBSTITUTES",
+      "source_name": "물리학및실험1",
+      "target_name": "일반물리"
+    },
+    {
+      "source_id": "CSE440",
+      "target_id": "CSE425",
+      "department": "소프트웨어융합학과",
+      "year": 2025,
+      "note": null,
+      "type": "SUBSTITUTES",
+      "source_name": "AIoT소프트웨어",
+      "target_name": "임베디드소프트웨어"
+    },
+    {
+      "source_id": "ME380",
+      "target_id": "ME373",
+      "department": "소프트웨어융합학과",
+      "year": 2025,
+      "note": null,
+      "type": "SUBSTITUTES",
+      "source_name": "시스템동역학",
+      "target_name": "시스템모델링"
+    },
+    {
+      "source_id": "CSE450",
+      "target_id": "CSE329",
+      "department": "소프트웨어융합학과",
+      "year": 2025,
+      "note": null,
+      "type": "SUBSTITUTES",
+      "source_name": "모바일/웹서비스프로그래밍",
+      "target_name": "Java프로그래밍"
+    },
+    {
+      "source_id": "IE215",
+      "target_id": "IE202",
+      "department": "소프트웨어융합학과",
+      "year": 2025,
+      "note": null,
+      "type": "SUBSTITUTES",
+      "source_name": "데이터사이언스",
+      "target_name": "고객관계관리"
+    },
+    {
+      "source_id": "EE211",
+      "target_id": "IE207",
+      "department": "소프트웨어융합학과",
+      "year": 2025,
+      "note": null,
+      "type": "SUBSTITUTES",
+      "source_name": "확률및랜덤변수",
+      "target_name": "실험통계학"
+    },
+    {
+      "source_id": "SWCON241",
+      "target_id": "SWCON345",
+      "department": "소프트웨어융합학과",
+      "year": 2025,
+      "note": null,
+      "type": "SUBSTITUTES",
+      "source_name": "융합연구1",
+      "target_name": "전공과목멘토링3"
+    },
+    {
+      "source_id": "SWCON242",
+      "target_id": "SWCON243",
+      "department": "소프트웨어융합학과",
+      "year": 2025,
+      "note": null,
+      "type": "SUBSTITUTES",
+      "source_name": "융합연구2",
+      "target_name": "외국인학생프렌드십"
+    },
+    {
+      "source_id": "SWCON341",
+      "target_id": "SWCON244",
+      "department": "소프트웨어융합학과",
+      "year": 2025,
+      "note": null,
+      "type": "SUBSTITUTES",
+      "source_name": "융합연구3",
+      "target_name": "프로그래밍재능기부1"
+    },
+    {
+      "source_id": "SWCON341",
+      "target_id": "SWCON245",
+      "department": "소프트웨어융합학과",
+      "year": 2025,
+      "note": null,
+      "type": "SUBSTITUTES",
+      "source_name": "융합연구3",
+      "target_name": "프로그래밍재능기부2"
+    },
+    {
+      "source_id": "SWCON341",
+      "target_id": "SWCON346",
+      "department": "소프트웨어융합학과",
+      "year": 2025,
+      "note": null,
+      "type": "SUBSTITUTES",
+      "source_name": "융합연구3",
+      "target_name": "프로그래밍재능기부3"
+    },
+    {
+      "source_id": "SWCON342",
+      "target_id": "SWCON343",
+      "department": "소프트웨어융합학과",
+      "year": 2025,
+      "note": null,
+      "type": "SUBSTITUTES",
+      "source_name": "융합연구4",
+      "target_name": "프로그래밍경진대회"
+    },
+    {
+      "source_id": "SWCON441",
+      "target_id": "SWCON344",
+      "department": "소프트웨어융합학과",
+      "year": 2025,
+      "note": null,
+      "type": "SUBSTITUTES",
+      "source_name": "융합연구5",
+      "target_name": "특허출원"
+    },
+    {
+      "source_id": "SWCON441",
+      "target_id": "SWCON347",
+      "department": "소프트웨어융합학과",
+      "year": 2025,
+      "note": null,
+      "type": "SUBSTITUTES",
+      "source_name": "융합연구5",
+      "target_name": "소프트웨어도서출간"
+    },
+    {
+      "source_id": "SWCON441",
+      "target_id": "SWCON348",
+      "department": "소프트웨어융합학과",
+      "year": 2025,
+      "note": null,
+      "type": "SUBSTITUTES",
+      "source_name": "융합연구5",
+      "target_name": "첨단기술백서출간"
+    },
+    {
+      "source_id": "SWCON442",
+      "target_id": "SWCON443",
+      "department": "소프트웨어융합학과",
+      "year": 2025,
+      "note": null,
+      "type": "SUBSTITUTES",
+      "source_name": "융합연구6",
+      "target_name": "프로그램앱스토어등록"
+    },
+    {
+      "source_id": "CSE450",
+      "target_id": "CSE435",
+      "department": "소프트웨어융합학과",
+      "year": 2025,
+      "note": null,
+      "type": "SUBSTITUTES",
+      "source_name": "모바일/웹서비스프로그래밍",
+      "target_name": "모바일프로그래밍"
+    },
+    {
+      "source_id": "SWCON254",
+      "target_id": "ME275",
+      "department": "소프트웨어융합학과",
+      "year": 2025,
+      "note": null,
+      "type": "SUBSTITUTES",
+      "source_name": "회로와신호",
+      "target_name": "전기전자회로"
+    },
+    {
+      "source_id": "SWCON367",
+      "target_id": "DC318",
+      "department": "소프트웨어융합학과",
+      "year": 2025,
+      "note": null,
+      "type": "SUBSTITUTES",
+      "source_name": "게임콘텐츠캡스톤디자인",
+      "target_name": "게임디자인"
+    },
+    {
+      "source_id": "SWCON367",
+      "target_id": "DC314",
+      "department": "소프트웨어융합학과",
+      "year": 2025,
+      "note": null,
+      "type": "SUBSTITUTES",
+      "source_name": "게임콘텐츠캡스톤디자인",
+      "target_name": "캡스톤디자인기반게임디자인"
+    }
+  ]
+}

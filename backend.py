@@ -1,5 +1,6 @@
 import os
 import json
+import re
 import google.generativeai as genai
 from neo4j import GraphDatabase
 from dotenv import load_dotenv
@@ -14,10 +15,8 @@ from langchain.schema import Document
 load_dotenv()
 
 class StreamlitRAGChatbot:
-    """
-    RAG(Vector DB + Knowledge graph)기반 챗봇
-    """
-    
+# RAG(Vector DB + Knowledge graph)기반 챗봇
+
     def __init__(self):
         self.INDEX_NAME = "chatbot-project"
         self.EMBEDDING_MODEL_NAME = "dragonkue/BGE-m3-ko"
@@ -61,6 +60,8 @@ class StreamlitRAGChatbot:
         4. [학사규정]에 근거한 내용으로만 답변하세요. 없는 내용을 지어내지 마세요.
         5. 정보가 없을 때는 "죄송합니다. 현재 가지고 있는 문서에는 해당 내용이 나와있지 않습니다."라고 답변하세요.
         6. 학생의 [입학년도]와 [학과]를 고려하여 해당 학생에게 적용되는 규정을 우선적으로 설명하세요.
+        7. 답변 생성이 끝난 후, 답변의 맨 마지막 줄에 실제로 참고한 규정의 '연도'를 아래 형식으로 반드시 표기하세요.
+            - 형식: [[REF: 2021, 2023]] (참고한 연도가 없다면 [[REF: ]] 라고 적으세요)
 
         ----------
         [학사규정]
@@ -100,8 +101,6 @@ class StreamlitRAGChatbot:
         prompt = f"""
         [이전 대화]와 [질문]을 분석하여 다음 두 가지를 수행하세요.
         
-        2. toll 결정: 사용자의 질문을 분석해 알맞은 검색 도구를 결정하세요.
-        
         [이전 대화]
         {history_text}
 
@@ -138,12 +137,11 @@ class StreamlitRAGChatbot:
         
         - 분류 기준 
             1) Knowledge graph
-             - 서로 다른 연도의 졸업요건이나 교육과정을 **비교**하는 질문
+             - 서로 다른 연도의 졸업요건이나 교육과정을 비교하는 질문
              - Vector DB로 검색할 수 없는 특정 연도에 대한 질문
              - 교육과정/졸업요건 변경에 대한 질문
              예) "2020년도 졸업요건과 2023년도 졸업요건의 차이점이 무엇인가요?"
-             예) "이제까지 ~과목들 수강했는데 몇 년도 졸업요건으로 변경하는 게 가장 유리한가요?
-             예) "25 교육과정으로 변경 시 어떤 점이 유리한가요?
+             예) "24 교육과정으로 변경 시 어떤 점이 유리한가요?
 
             2) Vector DB
                 - 위 1번 조건에 해당하지 않는 모든 질문
@@ -168,10 +166,11 @@ class StreamlitRAGChatbot:
             return {"tool": "Vector"} 
 
     # ============================================================
-    #  2. KG 데이터 검색
+    #  2. KG 데이터 검색(비교 질문에 사용):
+    #       사용자가 선택한 학과와 전공유형에 해당하는 모든 연도의 졸업요건 데이터를 Neo4j에서 가져옴
     # ============================================================
     def get_kg_data(self, department, major_type):
-    # 사용자가 선택한 학과와 전공유형에 해당하는 모든 연도의 졸업요건 데이터를 Neo4j에서 가져옴
+    
 
         cypher_query = """
         MATCH (req:Requirement {department: $dept, major_type: $type})
@@ -206,14 +205,32 @@ class StreamlitRAGChatbot:
             
             json_str = json.dumps(data_list, ensure_ascii=False, indent=2)
             
-            return [Document(page_content=json_str, metadata={"source": "Knowledge Graph"})]
+            return [Document(page_content=json_str, metadata={"source": "소프트웨어융합대학 교육과정 문서"})]
+    
+    # ============================================================
+    #  2-1. KG 데이터 검색(일반 질문에 사용):
+    #       사용자 정보에 해당하는 졸업요건 노드만 가져옴
+    # ============================================================
+    def get_user_subgraph(self, year, dept, major_type):
+        query = """
+        MATCH (req:Requirement {year: $year, department: $dept, major_type: $type})
+        RETURN properties(req) AS info
+        """
+        
+        with self.neo4j_driver.session() as session:
+            result = session.run(query, year=int(year), dept=dept, type=major_type)
+            record = result.single() 
+            
+            if record:
+                return str(record["info"])
+            return ""
+        
 
     # ============================================================
-    # 3. VectorDB 데이터 검색
+    # 3. VectorDB 데이터 검색(일반 질문에 사용):
+    #       사용자가 선택한 학과와 연도를 기준으로 검색
     # ============================================================
     def get_vector_context(self, admission_year, department, query):
-    # 사용자가 선택한 학과와 연도를 기준으로 검색
-
         college = self.DEPARTMENT_TO_COLLEGE_MAP.get(department)
         
         # 1차 검색: 사용자가 선택학 연도의 문서 검색
@@ -232,13 +249,102 @@ class StreamlitRAGChatbot:
             ]
         }
         
-        retriever_p = self.vectorstore.as_retriever(search_kwargs={'k': 5, 'filter': filter_primary})
-        retriever_s = self.vectorstore.as_retriever(search_kwargs={'k': 5, 'filter': filter_secondary})
+        retriever_p = self.vectorstore.as_retriever(search_kwargs={'k': 8, 'filter': filter_primary})
+        retriever_s = self.vectorstore.as_retriever(search_kwargs={'k': 8, 'filter': filter_secondary})
         
         docs = retriever_p.invoke(query) + retriever_s.invoke(query)
         
         unique_docs = { (doc.metadata['source'], doc.metadata.get('seq_num', 0)): doc for doc in docs }
         return list(unique_docs.values())
+    
+    # ============================================================
+    # 4. 남은 학점 계산기(자가 졸업진단 기능)
+    # ============================================================
+    def check_graduation_status(self, year, dept, major_type, taken_subjects_list):
+        # 1. 입력값 Set 변환
+        taken_set = set(taken_subjects_list)
+
+        # 2. DB 쿼리 
+        query = """
+        MATCH (req:Requirement {year: $year, department: $dept, major_type: $type})
+        MATCH (req)-[r:INCLUDES]->(subject:Subject)
+        WHERE r.classification IN ['전공필수', '전공기초', '전공선택'] 
+        OPTIONAL MATCH (subject)-[s:SUBSTITUTES]->(alternative:Subject)
+        RETURN 
+            properties(req) AS req_props, 
+            r.classification AS classification,        
+            r.sub_classification AS sub_classification, 
+            subject.name AS subject_name, 
+            subject.aliases AS subject_aliases, 
+            subject.credits AS subject_credits,
+            alternative.name AS alternative_name, 
+            alternative.aliases AS alternative_aliases, 
+            s.note AS note
+        """
+        
+        with self.neo4j_driver.session() as session:
+            data = [dict(r) for r in session.run(query, year=int(year), dept=dept, type=major_type)]
+
+        # 3. 초기화
+        req_info = data[0]['req_props'] if data else {}
+        missing = {}
+        earned = {} 
+        processed = set()
+
+        for r in data:
+            cls = r['classification']          
+            sub_cls = r['sub_classification']  
+            subj_name = r['subject_name']
+            credits = r['subject_credits'] or 0
+            
+            # 이수 여부 체크
+            candidates = [subj_name] + (r['subject_aliases'] or []) + \
+                         ([r['alternative_name']] if r['alternative_name'] else []) + \
+                         (r['alternative_aliases'] or [])
+            is_taken = any(c in taken_set for c in candidates if c)
+
+            # 학점 계산
+            if is_taken:    # 남은 학점 계산
+                if subj_name not in processed:
+                    earned[cls] = earned.get(cls, 0) + credits
+                    if sub_cls == '산학필수':
+                        earned['산학필수'] = earned.get('산학필수', 0) + credits
+                    processed.add(subj_name)
+            else:   # 남은 과목 계산(전기, 전필)
+                # 중복 제거하여 대체과목도 표시
+                if cls in ["전공필수", "전공기초"]:
+                    missing_list = missing.setdefault(cls, [])
+                    existing = next((x for x in missing_list if x["name"] == subj_name), None)
+                    
+                    current_alt = r['alternative_name']
+
+                    if existing:
+                        if current_alt:
+                            if existing["alternatives"] == "없음":
+                                existing["alternatives"] = current_alt
+                            elif current_alt not in existing["alternatives"]:
+                                existing["alternatives"] += f", {current_alt}"
+                    else:
+                        entry = {
+                            "name": subj_name, 
+                            "credits": credits, 
+                            "alternatives": current_alt or "없음", 
+                            "note": r['note'] or ""
+                        }
+                        missing_list.append(entry)
+
+        # 최종 현황 집계
+        status = {}
+        # DB 속성 매핑
+        mapping = {'credits_major_required': '전공필수', 'credits_major_elective': '전공선택', 
+                   'credits_major_basic': '전공기초', 'credits_industry_required': '산학필수'}
+
+        for db_k, kor in mapping.items():
+            req_score = req_info.get(db_k, 0) or 0
+            cur_score = earned.get(kor, 0)
+            status[kor] = {'required': req_score, 'earned': cur_score, 'remaining': max(0, req_score - cur_score)}
+
+        return req_info, missing, status
 
     # ============================================================
     #  4. 메인 Chat 함수
@@ -248,7 +354,7 @@ class StreamlitRAGChatbot:
         # 1. 히스토리 포맷팅
         history_text = ""
         if history:
-            recent = history[-6:]
+            recent = history[-6:]   # 앞의 3개 대화까지 기억
             formatted = [f"{'사용자' if m.get('role')=='user' else '챗봇'}: {m.get('content','')}" for m in recent]
             history_text = "\n".join(formatted)
         else:
@@ -258,118 +364,103 @@ class StreamlitRAGChatbot:
         intent_result = self.analyze_intent(query, history_text) 
         tool = intent_result.get("tool", "Vector")
         final_query = intent_result.get("final_query", query)
-        #디버깅용
-        print(f"Original: {query} -> Refined: {final_query}")
+        print(f"Original: {query} -> Refined: {final_query}")   #디버깅용
         
         # 3. 데이터 검색 (KG 또는 Vector)
         docs = []
-        source_info = ""
+        source_data = ""
         
         if tool == "KG":
             docs = self.get_kg_data(department, major_type)
-            source_info = "Knowledge Graph (졸업요건 DB)"
+            source_data = "소프트웨어융합대학 교육과정 PDF"
         else:
             docs = self.get_vector_context(admission_year, department, final_query) # 검색시에는 다시 생성된 쿼리로 
+             # ===== 디버깅 =====
+            print(f"검색된 문서 수: {len(docs)}")
+            if docs:
+                for i, doc in enumerate(docs[:3]):
+                    print(f"\n--- Doc {i+1} ---")
+                    print(f"Source: {doc.metadata.get('source', 'Unknown')}")
+                    print(f"Year: {doc.metadata.get('year', 'Unknown')}")
+                    print(f"Dept: {doc.metadata.get('department', 'Unknown')}")
+                    print(f"Content (first 150 chars): {doc.page_content[:150]}")
+            else:
+                print("검색된 문서 0개")
+    # ===== 끝 =====
+            kg_data = self.get_user_subgraph(admission_year, department, "졸업요건")
+
+            # 쿼리에 kg 데이터 같이 포함시킴
+            if kg_data:
+                query = f"[중요 참고사항(사용자 졸업요건 정보)]\n{kg_data}\n\n[질문]\n{query}"
             
             chunk_nums = sorted([int(d.metadata.get('seq_num', 0)) for d in docs if d.metadata.get('seq_num') is not None])
-            source_info = ", ".join(map(str, chunk_nums)) if chunk_nums else "없음"
+            source_data = ", ".join(map(str, chunk_nums)) if chunk_nums else "없음"
 
-        # 4. 답변 생성 (통합 프롬프트)
+        # 4. 답변 생성
         if not docs:
-            return "관련된 정보를 찾을 수 없었습니다.", "없음"
+            return "관련된 정보를 찾을 수 없었습니다.", "[]"
+        
+        numbered_docs = []
+        for i, doc in enumerate(docs):
+            
+            doc_year = doc.metadata.get("year")
+        
+            # 각 청크 앞에 번호와 연도를 적어서 llm에 전달
+            new_content = f"[{i+1}] ({doc_year}년 규정) {doc.page_content}"
+            
+            new_doc = Document(
+                page_content= new_content,
+                metadata= doc.metadata
+            )
+            numbered_docs.append(new_doc)
             
         response = self.document_chain.invoke({
-            "input": query, #답변 생성시에는 원래 쿼리로
-            "context": docs,  
+            "input": query, # 답변 생성시에는 원래 쿼리로
+            "context": numbered_docs,  
             "admission_year": admission_year,
             "department": department,
             "major_type": major_type,
             "history": history_text
-        })
+        }) 
         
-        return response, source_info
-
-# ============================================================
-# 테스트용
-# ============================================================
-if __name__ == "__main__":
-    print("DB 연결 중...")
-    
-    try:
-        bot = StreamlitRAGChatbot()
+        # 5. 답변 출처 필터링
+        selected_docs = []
         
-        # --- 1. 사용자 정보 설정 ---
-        print("\n학과 선택")
-        dept_list = bot.get_departments()
-        print(f"가능한 학과: {', '.join(dept_list)}")
-        while True:
-            dept = input(">> 학과를 입력하세요: ").strip()
-            if dept in dept_list:
-                break
-            print("목록에 없는 학과입니다. 다시 입력해주세요.")
-
-        print("\n입학년도 설정")
-        while True:
-            try:
-                year_input = input(">> 입학년도를 입력하세요 (예: 2024): ").strip()
-                admission_year = int(year_input)
-                break
-            except ValueError:
-                print(" 숫자로만 입력하세요.")
-
-        print("\n전공 유형 설정")
-        print("1. 단일전공  2. 다전공  3. 부전공")
-        while True:
-            type_choice = input(">> 번호를 선택하세요 (1, 2, 3): ").strip()
-            if type_choice == '1':
-                major_type = "단일전공"
-                break
-            elif type_choice == '2':
-                major_type = "다전공"
-                break
-            elif type_choice == '3':
-                major_type = "부전공"
-                break
-            else:
-                print(" 1, 2, 3 중에서 선택하세요.")
-
-        print(f"\n설정 완료: {admission_year}학번 / {dept} / {major_type}")
-        print("="*60)
-        print("질문을 입력하세요 (종료하려면 exit' 입력)")
-
-        # --- 2. 대화 루프 ---
-        history = []
-
-        while True:
-            query = input("\n👤 질문: ").strip()
+        if "[[REF:" in response:
+            # 답변만 남김
+            text, ref_str = response.split("[[REF:", 1)
+            response = text.strip() 
             
-            if not query: continue
-            if query.lower() in ['exit']:
-                print("\n챗봇을 종료합니다.")
-                break
+            # llm로부터 받은 출처번호 유효성 확인
+            indices = [int(n)-1 for n in re.findall(r'\d+', ref_str)]
+            selected_docs = [docs[i] for i in indices if 0 <= i < len(docs)]
+        
+        if not selected_docs:
+            selected_docs = docs[:3]
 
-            print("답변 생성 중...", end="", flush=True)
+        # 6. UI 출처 표시
+        source_data = []
+        seen = set()
+        page = None
+        
+        for doc in selected_docs:
+            source = doc.metadata.get("source", "알 수 없음")
+            
+            # 웹사이트
+            if source.startswith("http") or source.startswith("www"):
+                name = "홈페이지" 
+                url = source       
+                page = None            
+            
+            # 파일
+            else:
+                name = source.split("/")[-1] 
+                url = None  
+                page = None 
+            
+            # 중복 제거하고 리스트에 추가
+            if (name, page, url) not in seen:
+                source_data.append({"name": name, "page": page, "url": url})
+                seen.add((name, page, url))
 
-            # 챗봇 호출
-            response, source = bot.chat(
-                admission_year=admission_year,
-                department=dept,
-                query=query, 
-                history=history,
-                major_type=major_type
-            )
-
-            # 출력
-            print(f"\r챗봇:\n{response}")
-            print(f"\n참고 출처: {source}")
-            print("-" * 60)
-
-            # 대화 기록 업데이트
-            history.append({"role": "user", "content": query})
-            history.append({"role": "assistant", "content": response})
-
-    except Exception as e:
-        print(f"\n오류 발생: {e}")
-    finally:
-        if 'bot' in locals():
-            bot.close()
+        return response, source_data
