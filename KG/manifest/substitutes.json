@@ -1,0 +1,28 @@
+[
+  {
+    "file_path": "data/소프트웨어융합대학_교육과정_2025.pdf",
+    "common_metadata": { "year": 2025 },
+    "sections": [
+      {
+        "start_page": 13,  
+        "end_page": 14,    
+        "metadata": { "department": "컴퓨터공학과" }
+      },
+      {
+        "start_page": 41,  
+        "end_page": 41,
+        "metadata": { "department": "인공지능학과" }
+      },
+      {
+        "start_page": 69,  
+        "end_page": 69,
+        "metadata": { "department": "소프트웨어융합학과" }
+      },
+      {
+        "start_page": 92,  
+        "end_page": 92,
+        "metadata": { "department": "소프트웨어융합학과" }
+      }
+    ]
+  }
+]

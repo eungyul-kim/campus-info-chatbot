@@ -12,10 +12,10 @@ except Exception as e:
     print(f"[오류] {e}")
     exit()
 
-INPUT_SUBSTITUTE_FILE = "step1_substitutes.json" 
+INPUT_SUBSTITUTE_FILE = "output/substitutes_tables.json" 
 INPUT_SUBJECTS_FILE = "output/subject_nodes.json" 
-OUTPUT_REL_FILE = "step2_substitutes.json" 
-OUTPUT_NODE_FILE = "step2_new_subjects.json" 
+OUTPUT_REL_FILE = "output/substitutes_relationships.json" 
+OUTPUT_NODE_FILE = "output/new_subject_nodes.json" 
 
 
 def is_real_id(text):
