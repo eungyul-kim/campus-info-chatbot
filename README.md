@@ -31,7 +31,7 @@
 * 수강 과목 입력 시 Neo4j 그래프에서 필요한 서브그래프를 가져와 계산
 * **이수 현황 분석:** 영역별(전공필수/선택 등) 이수 학점 계산
 * **미이수 과목 도출:** 졸업을 위해 필수적으로 수강해야 하는 잔여 과목 안내
-* **대체 과목 추론:** 과목과 연결된 **대체 (Substitutes)** 관계 혹은 과목의 '별칭(aliases) 속성을 파악하여 구과목/대체인정과목도 이수 처리
+* **대체 과목 추론:** 과목과 연결된 **'대체 (Substitutes)'** 관계 혹은 과목의 **'별칭(aliases)'** 속성을 파악하여 구과목/대체인정과목도 이수 처리
 
 ---
 
@@ -45,7 +45,7 @@
 | **LLM** | Google Gemini 2.5 Flash |
 | **Framework** | LangChain |
 | **Vector DB** | Pinecone |
-| **Graph DB** | Neo4j AuraDB |
+| **Knowled Graph** | Neo4j AuraDB |
 | **Embedding** | HuggingFace (BGE-m3-ko) |
 
 ---
