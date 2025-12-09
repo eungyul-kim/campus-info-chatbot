@@ -2,6 +2,9 @@
 
 > LLM(Google Gemini)과 Knowledge Graph(Neo4j), Vector DB(Pinecone)를 결합한 학사정보 질의응답 시스템
 
+---
+
+
 ## 1. 프로젝트 개요
 * **과목명:** 졸업프로젝트
 * **학기**: 2025-2학기
@@ -70,10 +73,69 @@
 │   ├── update_neo4j.py         # 대체 관계 Neo4j DB에 추가 업데이트
 │   ├── manifest/               # 표 추출을 위한 페이지 설정 파일들
 │   └── output/                 # ETL 과정의 중간 산출물 (JSON)
+├── requirements.txt
 └── README.md
 ```
 
 ---
 
-## 참고사항
-- 실행 시 API 키 및 DB 접근 권한 필요
+## 5. 실행 방법
+
+**⚠️주의**: 실행하기 위해서는 사전 구축된 Pinecone 및 Neo4j에 대한 접근 권한 필요
+
+
+```bash
+# 패키지 설치
+pip install -r requirements.txt
+
+# 환경 변수 설정 (.env)
+GOOGLE_API_KEY=your_key
+PINECONE_API_KEY=your_key
+PINECONE_INDEX_NAME=your_index_name
+PINECONE_ENV=your_env 
+NEO4J_URI=your_uri
+NEO4J_PASSWORD=your_password
+
+# 실행
+streamlit run app.py
+```
+
+## 6. 데이터베이스 구축 과정 (DB Setup)
+
+### 6.1: Vector DB (Pinecone) 구축
+
+```bash
+# step1. 설정 파일 준비 (config.json): pdf 범위 지정 및 메타데이터 정의 
+
+# step2. 텍스트 추출 -> 분할 -> 임베딩 -> DB 저장 (pdf문서용)
+python vector_db/create_db.py
+
+# step3. 웹 페이지 정보 업데이트
+python vector_db/update_db_from_web.py
+```
+
+### 6.2: Knowledge Graph (Neo4j) 구축
+
+```bash
+# step1. 설정 파일 준비(manifest/): pdf 범위 지정 및 메타데이터 정의
+
+# step2. 그래프 구축에 필요한 표 추출 (includes 만 별도)
+python kg/extract_tables.py 
+python kg/extract_tables_includes.py
+
+# step3. Subject, Requirement 노드 생성
+python kg/create_subject.py
+python kg/create_requirement.py
+
+# step4. INCLUES 관계 생성
+python kg/create_includes.py
+
+# step5. Neo4j에 저장
+python kg/upload_neo4j.py
+
+# step6. SUBSTITUES 관계 생성 및 저장
+python kg/create_substitutes.py
+python kg/update_neo4j.py
+```
+
+
