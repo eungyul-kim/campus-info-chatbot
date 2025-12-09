@@ -60,9 +60,9 @@ class StreamlitRAGChatbot:
         4. [학사규정]에 근거한 내용으로만 답변하세요. 없는 내용을 지어내지 마세요.
         5. 정보가 없을 때는 "죄송합니다. 현재 가지고 있는 문서에는 해당 내용이 나와있지 않습니다."라고 답변하세요.
         6. 학생의 [입학년도]와 [학과]를 고려하여 해당 학생에게 적용되는 규정을 우선적으로 설명하세요.
-        7. 답변 생성이 끝난 후, 답변의 맨 마지막 줄에 실제로 참고한 규정의 '연도'를 아래 형식으로 반드시 표기하세요.
-            - 형식: [[REF: 2021, 2023]] (참고한 연도가 없다면 [[REF: ]] 라고 적으세요)
-
+        7. 답변 생성이 끝난 후, 답변의 맨 마지막 줄에 실제로 참고한 규정의 '번호'를 아래 형식으로 반드시 표기하세요.
+            - 각 문서 내용 앞에 붙어있는 [1], [2] 등의 번호를 참고하세요.
+            - 형식: [[REF: 1, 3]] (참고한 문서가 없다면 [[REF: ]])
         ----------
         [학사규정]
         {context}
@@ -109,6 +109,7 @@ class StreamlitRAGChatbot:
 
         --- 1. final_query 생성 ---
         [이전 대화]의 맥락을 반영하여 [질문]의 생략된 의미를 살려 다시 작성하세요.
+        [이전 대화] 를 참고할때 가장 최근의 대화내용 가장 우선시하여 참고하세요.
         [이전 대화]가 없거나 [질문]이 이전대화와 독립적이라면 수정하지 말고 그대로 두세요.
         
         <예시>
@@ -122,10 +123,10 @@ class StreamlitRAGChatbot:
         - 현재: "그거 몇 과목 수강해야돼?"
         -> final_query: "영어과목 몇 과목 수강해야되나요?"
 
-        Case 3. 독립적 질문 (수정 금지)
-        - 이전: "수강신청 언제야?"
-        - 현재: "장학금 신청 기간 알려줘"
-        -> final_query: "장학금 신청 기간 알려줘" (문맥이 이어지지 않으므로 그대로 둠)
+        Case 3. 독립적 질문 (수정 필요 없음)
+        - 이전: "산학필수 몇 학점 들어야 돼?"
+        - 현재: "성적장학금 받으려면 신청해야돼?"
+        -> final_query: "성적장학금 받으려면 신청해야돼" (문맥이 이어지지 않으므로 그대로 둠)
 
         
         --- 2. 검색 tool 결정 ---
@@ -138,13 +139,12 @@ class StreamlitRAGChatbot:
         - 분류 기준 
             1) Knowledge graph
              - 서로 다른 연도의 졸업요건이나 교육과정을 비교하는 질문
-             - Vector DB로 검색할 수 없는 특정 연도에 대한 질문
-             - 교육과정/졸업요건 변경에 대한 질문
+             - Vector DB로 검색할 수 없는 연도에 대한 질문
              예) "2020년도 졸업요건과 2023년도 졸업요건의 차이점이 무엇인가요?"
              예) "24 교육과정으로 변경 시 어떤 점이 유리한가요?
 
             2) Vector DB
-                - 위 1번 조건에 해당하지 않는 모든 질문
+            - 위 1번 조건에 해당하지 않는 모든 질문
         
                 
         --- 출력 형식 (JSON) ---
@@ -333,7 +333,6 @@ class StreamlitRAGChatbot:
                         }
                         missing_list.append(entry)
 
-        # 최종 현황 집계
         status = {}
         # DB 속성 매핑
         mapping = {'credits_major_required': '전공필수', 'credits_major_elective': '전공선택', 
@@ -375,7 +374,7 @@ class StreamlitRAGChatbot:
             source_data = "소프트웨어융합대학 교육과정 PDF"
         else:
             docs = self.get_vector_context(admission_year, department, final_query) # 검색시에는 다시 생성된 쿼리로 
-             # ===== 디버깅 =====
+             # ===== 디버깅용 =====
             print(f"검색된 문서 수: {len(docs)}")
             if docs:
                 for i, doc in enumerate(docs[:3]):
@@ -386,7 +385,7 @@ class StreamlitRAGChatbot:
                     print(f"Content (first 150 chars): {doc.page_content[:150]}")
             else:
                 print("검색된 문서 0개")
-    # ===== 끝 =====
+            # ===== 끝 =====
             kg_data = self.get_user_subgraph(admission_year, department, "졸업요건")
 
             # 쿼리에 kg 데이터 같이 포함시킴

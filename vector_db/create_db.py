@@ -13,7 +13,7 @@ load_dotenv()
 EMBEDDING_MODEL = "dragonkue/BGE-m3-ko"
 PINECONE_API_KEY = os.getenv("PINECONE_API_KEY")
 PINECONE_ENV = os.getenv("PINECONE_ENV")
-INDEX_NAME = "chatbot-project"
+INDEX_NAME = os.getenv("INDEX_NAME")
 CONFIG_PATH = "config.json"
 
 def process_pdf(config_path):

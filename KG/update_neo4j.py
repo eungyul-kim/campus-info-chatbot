@@ -8,8 +8,8 @@ NEO4J_URI = os.getenv("NEO4J_URI")
 NEO4J_USER = "neo4j"                 
 NEO4J_PASSWORD = os.getenv("NEO4J_PASSWORD")
 
-FILE_NEW_NODES = "step2_new_subjects.json"    # 대체과목 생성하면서 새로 발견된 구 과목들
-FILE_SUB_RELS = "step2_substitutes.json"      # 대체 관계들
+FILE_NEW_NODES = "output/new_subject_nodes.json"    # 대체과목 생성하면서 새로 발견된 구 과목들
+FILE_SUB_RELS = "output/substitutes_relationships.json"      # 대체 관계들
 
 class Neo4jAppender:
     def __init__(self, uri, user, password):

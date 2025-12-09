@@ -9,7 +9,7 @@ import json
 import fitz 
 import os
 
-# 입출력 데이터는 각 노드, 관계 생성시 달라짐
+# 입출력 데이터는 생성할 노드/관계 종류에 따라 변경
 INPUT = 'manifest/subject.json' 
 OUTPUT = "output/subject_tables.json" 
 
