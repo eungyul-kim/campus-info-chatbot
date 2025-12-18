@@ -175,11 +175,13 @@ class StreamlitRAGChatbot:
         cypher_query = """
         MATCH (req:Requirement {department: $dept, major_type: $type})
         MATCH (req)-[r:INCLUDES]->(sub:Subject)
+        OPTIONAL MATCH (sub)-[s:SUBSTITUTES]->(alt:Subject)
         RETURN 
             req.year AS year,
             properties(req) AS req_props,
             properties(r) AS rel_props,
-            properties(sub) AS sub_props
+            properties(sub) AS sub_props,
+            COLLECT({rel: properties(s), subject: properties(alt)}) AS substitutes
         ORDER BY req.year ASC
         """
         
@@ -298,10 +300,14 @@ class StreamlitRAGChatbot:
             credits = r['subject_credits'] or 0
             
             # 이수 여부 체크
-            candidates = [subj_name] + (r['subject_aliases'] or []) + \
-                         ([r['alternative_name']] if r['alternative_name'] else []) + \
-                         (r['alternative_aliases'] or [])
-            is_taken = any(c in taken_set for c in candidates if c)
+            candidates = set(
+                [subj_name] + 
+                (r['subject_aliases'] or []) + 
+                ([r['alternative_name']] if r['alternative_name'] else []) + 
+                (r['alternative_aliases'] or [])
+            )
+            candidates.discard(None)  # None 제거
+            is_taken = bool(candidates & taken_set) 
 
             # 학점 계산
             if is_taken:    # 남은 학점 계산
@@ -353,7 +359,7 @@ class StreamlitRAGChatbot:
         # 1. 히스토리 포맷팅
         history_text = ""
         if history:
-            recent = history[-6:]   # 앞의 3개 대화까지 기억
+            recent = history[-2:]   # 앞의 1개 대화까지 기억
             formatted = [f"{'사용자' if m.get('role')=='user' else '챗봇'}: {m.get('content','')}" for m in recent]
             history_text = "\n".join(formatted)
         else:
@@ -375,6 +381,7 @@ class StreamlitRAGChatbot:
         else:
             docs = self.get_vector_context(admission_year, department, final_query) # 검색시에는 다시 생성된 쿼리로 
              # ===== 디버깅용 =====
+            '''
             print(f"검색된 문서 수: {len(docs)}")
             if docs:
                 for i, doc in enumerate(docs[:3]):
@@ -385,6 +392,7 @@ class StreamlitRAGChatbot:
                     print(f"Content (first 150 chars): {doc.page_content[:150]}")
             else:
                 print("검색된 문서 0개")
+            '''
             # ===== 끝 =====
             kg_data = self.get_user_subgraph(admission_year, department, "졸업요건")
 
